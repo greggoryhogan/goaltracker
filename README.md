@@ -1,3 +1,3 @@
-# Create a Chrome extension to modify a website's HTML or CSS
+# Chrome extension to calculate monthly hours
 
-See post: https://blog.lateral.io/2016/04/create-chrome-extension-modify-websites-html-css/
+Allows user to add hourly rate, vacation days, and goal number of hours.
