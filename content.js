@@ -22,7 +22,7 @@ $(window).on('load', function() {
         var days = time.getDate() > date.getDate() ? time.getDate() : 0;
         var vacadays = $('#vacadays').val();
         
-        days = parseInt(days) - parseInt(vacadays);
+        days = parseInt(days);
         //alert(vacadays + ' '+ days);
         //alert(days +' Days Remaining.');
         //$('#remainingday').html(days);
@@ -45,7 +45,7 @@ $(window).on('load', function() {
       
       //currentDay
       var goal = parseInt($('#goaldays').val()) - timetotal;
-      var per = goal / weekdays;
+      var per = goal / (weekdays - parseInt(vacadays));
       var total = per.toFixed(2);
       $('#statusupdate').html('$'+earnings+' earned.<br>To attain goal:<br>'+goal+' hrs, '+total+' hrs/day').css('text-align', 'left');
     }
