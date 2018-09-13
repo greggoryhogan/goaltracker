@@ -1,7 +1,7 @@
 $(window).on('load', function() {
   setTimeout(function () {
 
-    $('body').append('<div id="trackerdiv" class="ui-widget-content draggable" style="cursor:move;position:fixed;left:6%;top:20%;z-index:9;border-radius:3px; background:#0D7DB5;color:#fff; padding: 10px 10px 20px 10px;">Goal:<br><input type="text" id="goaldays" value="124" style="margin: 3px 0;" /><br>Hourly:<br><input type="text" id="hourly" value="65" style="margin: 3px 0;" /><br>Vacation Days:<br><input type="text" id="vacadays" value="0" style="margin: 3px 0;" /><div id="statusupdate" style="color:#fff;padding: 5px 0 0 0;"></div></div>');
+    $('body').append('<div id="trackerdiv" class="ui-widget-content draggable" style="cursor:move;position:fixed;left:6%;top:20%;z-index:9;border-radius:3px; background:#0D7DB5;color:#fff; padding: 10px 10px 20px 10px;">Goal Hours:<br><input type="text" id="goaldays" value="124" style="margin: 3px 0;" /><br>Hourly Wage:<br><input type="text" id="hourly" value="65" style="margin: 3px 0;" /><br>Vacation Days:<br><input type="text" id="vacadays" value="0" style="margin: 3px 0;" /><div id="statusupdate" style="color:#fff;padding: 5px 0 0 0;"></div></div>');
     //<br><button id="updatedays" style="margin-top: 10px;display: block;width: 100%;background: #85c51f;color: #fff;border: none;padding: 10px;text-transform: uppercase;cursor:pointer;">Update</button>
       $( ".draggable" ).draggable();
     
