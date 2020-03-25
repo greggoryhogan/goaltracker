@@ -48,7 +48,12 @@ $(window).on('load', function() {
       var goalvalue = parseInt($('#goaldays').val()) * parseInt($('#hourly').val());
       var per = goal / (weekdays - parseInt(vacadays));
       var total = per.toFixed(2);
-      $('#statusupdate').html('$'+earnings+' of $'+goalvalue+' earned.<br>To attain goal:<br>'+goal+' hrs, '+total+' hrs/day').css('text-align', 'left');
+      if(goal > 0) {
+        $('#statusupdate').html('$'+earnings+' of $'+goalvalue+' earned.<br>To attain goal:<br>'+goal+' hrs, '+total+' hrs/day').css('text-align', 'left');
+      } else {
+        $('#statusupdate').html('$'+earnings+' of $'+goalvalue+' earned.<br>You reached your goal!').css('text-align', 'left');
+      }
+      
     }
 
     $('body').on('click', '#updatedays', function() {

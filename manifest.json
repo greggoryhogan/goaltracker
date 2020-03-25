@@ -1,11 +1,10 @@
 {
   "manifest_version": 2,
-
   "name": "Interactology Goal Tracker",
   "version": "0.1.0",
   "description": "Calculate Monthly Hours Goal (124)",
   "content_scripts": [{
-    "js": ["jquery-1.12.4.js","jquery-ui.js","content.js"],
+    "js": ["jquery-3.3.1.min.js","jquery-ui.js","content.js"],
     "matches": ["https://interactology.freshbooks.com/timesheet*"]
   }]
 
